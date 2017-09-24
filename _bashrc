@@ -1,6 +1,6 @@
 #!/bin/bash
-if [ -d $HOME/.bash/ ]; then
-  for bashf in $HOME/.bash/*.bash; do
+if [ -d $HOME/.bashrc.d/ ]; then
+  for bashf in $HOME/.bashrc.d/*.bash; do
       . "$bashf"
   done
   unset bashf
