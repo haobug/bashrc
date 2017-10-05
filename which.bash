@@ -1,5 +1,4 @@
 #!/bin/bash
-
 oldwhich=`which which`
 #echo $oldwhich
 list_alias(){

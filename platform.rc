@@ -1,0 +1,10 @@
+#!/bin/bash
+platform='unknown'
+unamestr=`uname`
+case $unamestr in
+    Linux) platform='linux';;
+    Darwin) platform='macos';;
+    FreeBSD) platform='freebsd';;
+    *NT-6.1) platform='windows';;
+esac
+export PLATFORM=$platform
